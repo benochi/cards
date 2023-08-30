@@ -1,12 +1,6 @@
 package main
 
 func main() {
-	cards := newDeck()
-
-	//iterate over slice
+	cards := newDeckFromFile("Cards")
 	cards.print()
-}
-
-func newCard() string {
-	return "Five of Diamonds"
 }
