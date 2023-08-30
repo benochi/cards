@@ -1,8 +1,8 @@
 package main
 
 func main() {
-	cards := deck{newCard(), newCard(), "Ace of Diamonds"}
-	cards = append(cards, "New Element")
+	cards := newDeck()
+
 	//iterate over slice
 	cards.print()
 }
