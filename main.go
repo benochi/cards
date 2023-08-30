@@ -9,7 +9,6 @@ func main() {
 	for i, card := range cards {
 		fmt.Println(i, card)
 	}
-
 }
 
 func newCard() string {
