@@ -58,8 +58,10 @@ func newDeckFromFile(filename string) deck {
 
 // recevier allows cards.shuffle()
 func (d deck) shuffle() {
+	// source = rand.NewSource() solution in tutorial, but I think this is outdated.
+	// r := rand.New(source)
 	for i := range d {
-		newPosition := rand.Intn(len(d) - 1)
+		newPosition := rand.Intn(len(d) - 1)        //had an error in tutorial but worked here.
 		d[i], d[newPosition] = d[newPosition], d[i] //one line swap.
 	}
 }
