@@ -1,6 +1,6 @@
 package main
 
 func main() {
-	cards := newDeckFromFile("Cards")
+	cards := newDeckFromFile("bad file")
 	cards.print()
 }
